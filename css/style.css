@@ -127,3 +127,103 @@ footer a {
   width: 30%;
   cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+  .left {
+    background-size: 40vw,100%;
+  }
+
+  .content h1 {
+    font-size: 26px;
+    margin-bottom: 9px;
+  }
+
+  .social-links a {
+    font-size: 18px;
+    margin-left: 15px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .content p {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  label {
+    color: hsl(243, 87%, 12%);
+    margin-bottom: 15px;
+  }
+
+  .flex-container {
+    flex-flow: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    max-width: 100%;
+    min-height: 80vh;
+  }
+
+  .left {
+    background: url("../img/ilstr.svg") no-repeat center,
+      url("../img/bg-mobile.svg");
+    background-size: 55vw, 100% 100%;
+  }
+
+  .right header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 49px 0;
+  }
+
+  .social-links {
+    right: 49px;
+  }
+
+  .social-links a {
+    color: #fff;
+  }
+
+  .logo {
+    background: url("../img/logo-mobile.svg") no-repeat;
+    background-size: 100%;
+    left: 49px;
+  }
+
+  .content h1 {
+    padding: 0;
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+
+  .content p {
+    font-size: 10px;
+    font-size: 14px;
+    max-width: 309px;
+    word-break: keep-all;
+    line-height: 1.5;
+  }
+
+  .spacer {
+    display: initial;
+  }
+
+  .signup-form input[type="email"] {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .signup-form button[type="submit"] {
+    margin: 0;
+    width: 133px;
+    height: 41px;
+  }
+}
